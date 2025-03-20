@@ -28,7 +28,7 @@ public:
     void setmonster();
     int m_x_size = 1200;
     int m_y_size = 800;
-    int m_monsnum = 1;
+    int m_monsnum = 10;
     QTimer timer;
     QTimer timer0;
     QPoint mpos;
