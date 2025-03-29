@@ -1,17 +1,17 @@
 #ifndef MONSTER_H
 #define MONSTER_H
 
-#include <QObject>
+#include <QWidget>
 #include <QRect>
 #include "position.h"
 
 #include <QDebug>
 
-class monster : public QObject, public position
+class monster : public QWidget, public position
 {
     Q_OBJECT
 public:
-    explicit monster(QObject *parent = nullptr);
+    explicit monster(QWidget *parent = nullptr);
     void track0(position p1);
     void track1();
     void attack(position & p1);
@@ -31,7 +31,7 @@ public:
     float sin;
     float cos;
     QTimer m_timer;
-
+    QPixmap m_image;
 
     int test = 0;
 signals:

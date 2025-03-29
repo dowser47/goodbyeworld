@@ -141,7 +141,7 @@ void hero::recover0()
     });
     m_recover.start(m_beganrecover);
 
-    qDebug()<<shield<<' '<<blood;
+    // qDebug()<<shield<<' '<<blood;
 }
 
 void hero::recover1()

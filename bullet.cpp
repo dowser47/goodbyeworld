@@ -1,6 +1,10 @@
 #include "bullet.h"
 
-bullet::bullet() {}
+bullet::bullet(QWidget *parent)
+    : QWidget{parent}
+{
+    m_image.load(":/image/resource/bullet0.png");
+}
 
 void bullet::aim()
 {

@@ -8,6 +8,7 @@
 
 #include "position.h"
 #include "bullet.h"
+#include "weapon.h"
 class hero : public QWidget, public position
 {
     Q_OBJECT
@@ -16,9 +17,9 @@ public:
 
 
     int h_height=80;
-    int h_width=60;
-    int h_bspeed=10;
-
+    int h_width=80;
+    int h_bspeed=20;
+    bool orientation = 1;
     bool m_isup =0;
     bool m_isdown =0;
     bool m_isleft =0;
@@ -27,10 +28,12 @@ public:
     int m_beganrecover = 5000;
     int m_recoverrate = 2000;
     int m_whichbullet = 0;
-
+    // QPixmap m_image;
+    QImage m_image;
     QTimer m_timer;
     QTimer m_recover;
     bullet magazine[50];
+    weapon m_weapon;
     void movement();
     void shoot(int i);
     void recover0();

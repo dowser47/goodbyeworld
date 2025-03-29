@@ -1,7 +1,7 @@
 #include "monster.h"
 
-monster::monster(QObject *parent)
-    : QObject{parent}
+monster::monster(QWidget *parent)
+    : QWidget{parent}
 {}
 
 void monster::track0(position p1)
@@ -71,7 +71,7 @@ void monster::attack(position & p1)
         m_speed *= 2;
         emit harm();
         disconnect(&m_timer, &QTimer::timeout, nullptr, nullptr);
-
+        qDebug()<<"0";
     });
     m_timer.start(attackrate);
 

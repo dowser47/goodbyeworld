@@ -17,19 +17,6 @@
    <property name="mouseTracking">
     <bool>true</bool>
    </property>
-   <widget class="QLabel" name="label0">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>0</y>
-      <width>191</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

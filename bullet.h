@@ -1,11 +1,14 @@
 #ifndef BULLET_H
 #define BULLET_H
+#include <QWidget>
 #include "position.h"
 
-class bullet: public position
+class bullet : public QWidget, public position
 {
+    Q_OBJECT
 public:
-    bullet();
+    explicit bullet(QWidget *parent = nullptr);
+
     bool m_free = 1;
     int target_x;
     int target_y;
@@ -18,6 +21,7 @@ public:
     float d;
     float sin;
     float cos;
+    QPixmap m_image;
     void aim();//计算弹道
     void fly();//让子弹飞
 };

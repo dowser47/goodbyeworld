@@ -29,10 +29,21 @@ public:
     int m_x_size = 1200;
     int m_y_size = 800;
     int m_monsnum = 10;
+    int m_alivenum = 10;
     QTimer timer;
     QTimer timer0;
-    QPoint mpos;
+    QPointF mpos;
     QRandomGenerator m_rand;
+    QPixmap sigimage0;
+    QPixmap sigimage1;
+    QCursor sigcursor0;
+    QCursor sigcursor1;
+    QPixmap map;
+    QPixmap blood;
+    QPixmap shield;
+    QFont font;
+    // QPen pen;
+
     void paintEvent(QPaintEvent* event);
     void keyPressEvent(QKeyEvent* e);
     void keyReleaseEvent(QKeyEvent* e);
@@ -53,6 +64,9 @@ public:
     int temp_orient;
 
     int test=0;
+
+signals:
+    void gameover();
 
 private:
     Ui::MainWindow *ui;
