@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QRect>
 #include "position.h"
-
+#include "bullet.h"
 #include <QDebug>
 
 class monster : public QWidget, public position
@@ -12,26 +12,31 @@ class monster : public QWidget, public position
     Q_OBJECT
 public:
     explicit monster(QWidget *parent = nullptr);
-    void track0(position p1);
+    void track0(position &p1);
     void track1();
-    void attack(position & p1);
-
-    int m_height=50;
-    int m_width=50;
+    virtual void attack(position & p1);
+    virtual void shoot(int i);
+    int m_height=100;
+    int m_width=100;
     int m_free = 0;
     int power =1;
-    float attackrad = 50;
-    int attackrate = 500;
-    float sightrange = 400;
-    bool isattacking = 0;
-    bool istracking = 0;
+    float attackrad = 125;
+    int attackrate = 1000;
+    float sightrange = 500;
+    int m_bspeed = 6;
+    bool isattacking = false;
+    bool istracking = false;
     float x;
     float y;
     float d;
     float sin;
     float cos;
+    bullet m_bullet0;
+    bullet m_bullet1;
+
     QTimer m_timer;
     QPixmap m_image;
+    QPixmap m_image0;
 
     int test = 0;
 signals:

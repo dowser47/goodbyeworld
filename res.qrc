@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>resource/blood0.png</file>
+        <file>resource/bullet0.png</file>
+        <file>resource/enemy0.png</file>
+        <file>resource/enemy1.png</file>
+        <file>resource/ground.png</file>
+        <file>resource/ground1.png</file>
+        <file>resource/ground2.png</file>
+        <file>resource/person0.png</file>
+        <file>resource/person1.png</file>
+        <file>resource/shield0.png</file>
+        <file>resource/sight0.png</file>
+        <file>resource/sight1.png</file>
+        <file>resource/weapon0.png</file>
+        <file>resource/weapon1.png</file>
+        <file>resource/door0.png</file>
+        <file>resource/enemy2.png</file>
+        <file>resource/bullet1.png</file>
+        <file>resource/bullet2.png</file>
+    </qresource>
+</RCC>

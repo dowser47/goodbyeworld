@@ -35,6 +35,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         btnwidget.h btnwidget.cpp btnwidget.ui
         weapon.h weapon.cpp
         res.qrc
+        monster1.h monster1.cpp
+        boss.h boss.cpp
 
 
 

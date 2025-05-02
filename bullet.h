@@ -12,10 +12,8 @@ public:
     bool m_free = 1;
     int target_x;
     int target_y;
-    int m_x0;
-    int m_y0;
-    int m_height = 10;
-    int m_width = 10;
+    int m_height = 20;
+    int m_width = 20;
     float x;
     float y;
     float d;

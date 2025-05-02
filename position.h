@@ -24,12 +24,8 @@ public:
     int blood;
     int fullblood;
     QRect m_Rect;
-
     float E_distance(position p2);
-    int M_distance(position p2);
-    // float angle(position p2);
-    // enum orientation{up,down,left,right};
-
+    // int M_distance(position p2);
 
 };
 
