@@ -29,9 +29,11 @@ public:
     bool m_tol;
     bool m_tor;
     bool m_skillready;
+    bool m_skillon = 0;
     int m_firespeed = 100;
     int m_beganrecover = 5000;
     int m_recoverrate = 2000;
+    int m_protlen = 1000;
     int m_skillrate = 10000;
     int m_skillstop = 5000;
     int m_whichbullet = 0;
@@ -39,9 +41,13 @@ public:
     // QPixmap m_image;
     QImage m_image;
     QImage m_image1;
+    QImage m_skill_image;
+    QImage m_skill_image1;
     QTimer m_timer;
     QTimer m_recover;
+    QTimer m_protect;
     QTimer m_skill;
+    QPointF m_pf;
     bullet magazine[50];
     weapon m_weapon;
     void movement();

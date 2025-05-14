@@ -34,5 +34,6 @@ void monster1::shoot(int i)
     magazine[i].m_speed = m_bspeed;
     magazine[i].m_Rect.setRect(m_x,m_y,magazine[i].m_width,magazine[i].m_height);
     magazine[i].aim();
+
 }
 

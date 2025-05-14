@@ -2,6 +2,7 @@
 #define LOGINWINDOW_H
 
 #include <QWidget>
+#include <QPainter>
 
 namespace Ui {
 class LoginWindow;
@@ -14,7 +15,8 @@ class LoginWindow : public QWidget
 public:
     explicit LoginWindow(QWidget *parent = nullptr);
     ~LoginWindow();
-
+    QPixmap background;
+    void paintEvent(QPaintEvent *event);
 signals:
     void gamestart();
 

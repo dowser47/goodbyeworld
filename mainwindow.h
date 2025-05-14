@@ -50,6 +50,8 @@ public:
     int temp_orient;
     int pnum;
     position *positions[500];
+    position* head;
+    position* whichp;
     int test=0;
     QTimer timer;
     QTimer timer0;

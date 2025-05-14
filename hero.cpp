@@ -131,6 +131,14 @@ void hero::shoot(int i)
 
 void hero::recover0()
 {
+    m_Rect.setWidth(0);
+    m_Rect.setHeight(0);
+    connect(&m_protect,&QTimer::timeout,[=](){
+        m_Rect.setWidth(h_width);
+        m_Rect.setHeight(h_height);
+        disconnect(&m_protect,&QTimer::timeout,0,0);
+    });
+    m_protect.start(m_protlen);
     if(m_recover.isActive())
         disconnect(&m_recover,&QTimer::timeout,0,0);
     connect(&m_recover,&QTimer::timeout,[=](){
@@ -191,15 +199,13 @@ void hero::rangecheck()
 
 void hero::skill()
 {
+    m_skillon = true;
     disconnect(&m_skill,&QTimer::timeout,0,0);
-    m_power *= 3;
-    m_speed *= 2;
     m_firespeed *= 0.5;
     if(m_timer.isActive())
         m_timer.start(m_firespeed);
     connect(&m_skill,&QTimer::timeout,[=](){
-        m_power /= 3;
-        m_speed /= 2;
+        m_skillon = false;
         m_firespeed /= 0.5;
         if(m_timer.isActive())
             m_timer.start(m_firespeed);

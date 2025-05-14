@@ -11,8 +11,6 @@ public:
     explicit sight(QWidget *parent = nullptr);
     int m_x;
     int m_y;
-
-    //void mouseMoveEvent(QMouseEvent* e) ;
 signals:
     void fire();
 };

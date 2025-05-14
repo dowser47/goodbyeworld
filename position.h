@@ -25,7 +25,7 @@ public:
     int fullblood;
     QRect m_Rect;
     float E_distance(position p2);
-    // int M_distance(position p2);
+    position* next = NULL;
 
 };
 

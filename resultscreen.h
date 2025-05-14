@@ -16,6 +16,8 @@ public:
     explicit ResultScreen(QWidget *parent = nullptr);
     ~ResultScreen();
     void closeEvent(QCloseEvent *event);
+    QPixmap background;
+    void paintEvent(QPaintEvent *event);
 
 signals:
     void gohome();

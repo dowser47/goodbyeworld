@@ -6,6 +6,7 @@
 #include "position.h"
 #include "bullet.h"
 #include <QDebug>
+#include "weapon.h"
 
 class monster : public QWidget, public position
 {
@@ -20,8 +21,8 @@ public:
     int m_width=100;
     int m_free = 0;
     int power =1;
-    float attackrad = 125;
-    int attackrate = 1000;
+    float attackrad = 200;
+    int attackrate = 2000;
     float sightrange = 500;
     int m_bspeed = 6;
     bool isattacking = false;
@@ -33,6 +34,7 @@ public:
     float cos;
     bullet m_bullet0;
     bullet m_bullet1;
+    weapon m_weapon;
 
     QTimer m_timer;
     QPixmap m_image;

@@ -2,21 +2,23 @@
     <qresource prefix="/image">
         <file>resource/blood0.png</file>
         <file>resource/bullet0.png</file>
-        <file>resource/enemy0.png</file>
-        <file>resource/enemy1.png</file>
         <file>resource/ground.png</file>
-        <file>resource/ground1.png</file>
-        <file>resource/ground2.png</file>
-        <file>resource/person0.png</file>
-        <file>resource/person1.png</file>
         <file>resource/shield0.png</file>
         <file>resource/sight0.png</file>
         <file>resource/sight1.png</file>
-        <file>resource/weapon0.png</file>
-        <file>resource/weapon1.png</file>
-        <file>resource/door0.png</file>
-        <file>resource/enemy2.png</file>
         <file>resource/bullet1.png</file>
-        <file>resource/bullet2.png</file>
+        <file>resource/boss.png</file>
+        <file>resource/door.png</file>
+        <file>resource/fireball.png</file>
+        <file>resource/goblin.png</file>
+        <file>resource/handgun.png</file>
+        <file>resource/knight.png</file>
+        <file>resource/knight_skill.png</file>
+        <file>resource/lance.png</file>
+        <file>resource/loginwindow.png</file>
+        <file>resource/newgamebtn.png</file>
+        <file>resource/backhomebtn.jpg</file>
+        <file>resource/restartbtn.jpg</file>
+        <file>resource/resultwindow.jpg</file>
     </qresource>
 </RCC>

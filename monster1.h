@@ -11,7 +11,7 @@ class monster1 : public monster
 public:
     monster1();
     int which_bullet = 0;
-    int runawayrange = 300;
+    int runawayrange = 200;
     bullet magazine[10];
     virtual void attack(position & p1);
     void shoot(int i);

@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>go home</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="play_agai_btn">
@@ -36,7 +36,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>play again</string>
+    <string/>
    </property>
   </widget>
  </widget>

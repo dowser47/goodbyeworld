@@ -8,11 +8,8 @@ bullet::bullet(QWidget *parent)
 
 void bullet::aim()
 {
-    x = target_x - m_x;
-    y = target_y - m_y;
-    d = sqrt(x*x + y*y);
-    sin = y/d;
-    cos = x/d;
+    sin = (target_y - m_y)/sqrt((target_x - m_x)*(target_x - m_x) + (target_y - m_y)*(target_y - m_y));
+    cos = (target_x - m_x)/sqrt((target_x - m_x)*(target_x - m_x) + (target_y - m_y)*(target_y - m_y));
 }
 
 void bullet::fly()
